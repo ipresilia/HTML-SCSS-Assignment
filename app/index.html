@@ -1,42 +1,119 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>junior html scss assignment repo</title>
-
-    <!-- Place favicon.ico in the root directory -->
-
-    <!-- build:css styles/main.css -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FKJ Music</title>
+    <script src="https://use.fontawesome.com/fd0129ff6d.js"></script>
     <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
+    <!-- scripts/vendor/modernizr.js -->
+    <!-- <script src="/bower_components/modernizr/modernizr.js"></script> -->
   </head>
   <body>
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
-      <div>
-        <a href="/" class="logo">
-          <img src="images/logo.svg" alt="Plugify">
-        </a>
+    <!-- TEST TEST TEST  -->
+    <!-- <nav>
+      <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#music">MUSIC</a></li>
+        <li><a href="#book">BOOK</li></a>
+      </ul>
+    </nav> -->
+
+
+
+    <header>
+      <!-- COLLAPSING HEADER WITH CARROUSEL? -->
+      <!-- NEEDS A PRETTY AND RESPONSIVE NAVBAR -->
+      <!-- NEEDS IMAGE - DONE -->
+      <!-- NEEDS LOGO (MAYBE) -->
+      <!-- NEEDS BOOK ME BUTTON -->
+      <div class="image img1">
+        <div class="text">
+          <span class="border">
+            FKJ Music
+          </span>
+        </div>
       </div>
-    </div>
+    </header>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
+    <main>
+      <section class="section section-light">
+        <h2>About</h2>
+        <p>
+          French Kiwi Juice (FKJ) is a French multi-instrumentalist, singer, and musician from the French city, Tours.
+          He's been described as a "pioneer" and "one of the flag bearers" of the new New French House genre
+        </p>
+      </section>
+
+
+      <!-- IMAGE 2 -->
+      <div class="image img2">
+        <div class="text">
+          Music
+        </div>
+      </div>
+
+
+      <section class="section section-dark">
+        <h2>Latest Music</h2>
+        <ul>
+          <li>
+            <a href="#">Canggu</a>
+          </li>
+          <li>
+            <a href="#">Skyline</a>
+          </li>
+          <li>
+            <a href="#">Go Back Home</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- IMAGE 3 -->
+      <div class="image img3">
+        <div class="text">
+          Book FKJ
+        </div>
+      </div>
+
+
+      <section class="section section-dark">
+        <h2>Book Services</h2>
+        <p>
+          FKJ offers a variety of services; for more information concerning pricing and services, click the following button
+        </p>
+        <button class="btn btn-primary">Book FKJ</button>
+      </section>
+
+      <!-- VIDEO - IFRAME TEST -->
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lqXrh8LITSs" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+    </main>
+
+
+    <!-- NEEDS FOOTER -->
+    <footer>
+      <!-- <div class="footer">
+        <p>
+          ©FKJ Music, <i class="fa fa-code" aria-hidden="true"></i>
+          with <i class="fa fa-heart" aria-hidden="true"></i>
+          by <a href="https://github.com/ipresilia" target="_blank">Ilsmarie</a>
+        </p>
+      </div> -->
+    </footer>
+
+    <!-- scripts/vendor.js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+    <!-- <script src="/bower_components/modernizr/modernizr.js"></script> -->
 
-    <!-- build:js scripts/plugins.js -->
+    <!-- scripts/plugins.js -->
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
@@ -49,10 +126,8 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-    <!-- endbuild -->
 
-    <!-- build:js scripts/main.js -->
+    <!-- scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <!-- endbuild -->
   </body>
 </html>
