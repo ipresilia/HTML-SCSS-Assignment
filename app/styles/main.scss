@@ -1,17 +1,149 @@
 $icon-font-path: '../fonts/';
-// bower:scss
+// ------------------------------------
+// COLORS
+// ------------------------------------
+$color-primary : rgb(70, 70, 70);
+$color-secondary : rgb(0, 0, 0);
+$color-tertiary : rgb(224, 224, 224);
+$color-quaternary : rgb(50, 50, 50);
+// ------------------------------------
+// ------------------------------------
+
+// ------------------------------------
+// IMPORTS
+// ------------------------------------
 @import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
-// endbower
 
 // ------------------------------------
 // MODULES
 // ------------------------------------
-
 @import 'app/styles/modules/position-mixin';
-
 
 // ------------------------------------
 // PARTIALS
 // ------------------------------------
-
 @import 'app/styles/partials/logo';
+// ------------------------------------
+// ------------------------------------
+
+body, html, header, main, footer {
+  height: 100%;
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: $color-primary;
+}
+
+
+// TEST TEST TEST
+// nav ul {
+//   position: fixed;
+//   padding: 10px;
+//   background-color: $color-quaternary;
+//   margin-bottom: 0;
+//   top: 0;
+//   width: 100%;
+//
+// }
+//
+// nav li {
+//   display: inline;
+// 	color: white;
+// 	padding: 0 10px;
+// }
+
+.image {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*Parallax Effect on larger screens*/
+  background-attachment: fixed;
+  /*NEED MEDIA-QUERIES TO FIX ON MOBILE DEVICES*/
+  opacity: 0.5;
+
+}
+
+
+// VIDEO IFRAME TEST
+.video {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 35px;
+height: 0;
+overflow: hidden;
+}
+
+.video iframe {
+  position: absolute;
+  top: 100;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img1 {
+  background-image: url("../images/fkj.jpg");
+  min-height: 100%;
+}
+
+.img2 {
+  background-image: url("../images/event.jpg");
+  min-height: 400px;
+}
+
+.img3 {
+  background-image: url("../images/concert.jpeg");
+  min-height: 400px;
+}
+
+ul {
+  text-align: center;
+  padding: 10px 80px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-secondary;
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: 0.625rem;
+  }
+
+.border {
+  border: $color-secondary 5px solid;
+}
+
+.section-light {
+  background-color: $color-tertiary;
+  color: $color-primary;
+}
+
+.section-dark {
+  background-color: $color-quaternary;
+  color: $color-tertiary;
+}
+
+a {
+  text-decoration: none;
+  color: $color-tertiary;
+  &:hover {
+    text-decoration: none;
+    color: $color-secondary;
+  }
+}
+
+li {
+  list-style-type: none;
+}
