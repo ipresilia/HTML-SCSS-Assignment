@@ -11,43 +11,50 @@
     <!-- <script src="/bower_components/modernizr/modernizr.js"></script> -->
   </head>
   <body>
-    <!--[if IE]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!-- TEST TEST TEST  -->
-    <!-- <nav>
-      <ul>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#music">MUSIC</a></li>
-        <li><a href="#book">BOOK</li></a>
-      </ul>
-    </nav> -->
-
-
-
     <header>
-      <!-- COLLAPSING HEADER WITH CARROUSEL? -->
-      <!-- NEEDS A PRETTY AND RESPONSIVE NAVBAR -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html"><strong style="color: rgb(255, 153, 51);">FKJ Music</strong></a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#music">Music</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- NEEDS A PRETTY AND RESPONSIVE NAVBAR (DONE)-->
       <!-- NEEDS IMAGE - DONE -->
-      <!-- NEEDS LOGO (MAYBE) -->
       <!-- NEEDS BOOK ME BUTTON -->
+    </header>
+
+    <main>
       <div class="image img1">
-        <div class="text">
+        <div class="text-head">
           <span class="border">
             FKJ Music
           </span>
         </div>
       </div>
-    </header>
-
-    <main>
-      <section class="section section-light">
+      <section class="section section-light" id="about">
         <h2>About</h2>
         <p>
-          French Kiwi Juice (FKJ) is a French multi-instrumentalist, singer, and musician from the French city, Tours.
-          He's been described as a "pioneer" and "one of the flag bearers" of the new New French House genre
+          <strong>French Kiwi Juice (FKJ)</strong> is a French multi-instrumentalist, singer, and musician from the French city, Tours.
+          He's been described as a "pioneer" and "one of the flag bearers" of the new New French House genre.
         </p>
+        <a href="about.html">
+          <button class="btn btn-warning">Learn More</button>
+        </a>
       </section>
 
 
@@ -59,54 +66,139 @@
       </div>
 
 
-      <section class="section section-dark">
+      <section class="section section-dark" id="music">
         <h2>Latest Music</h2>
         <ul>
           <li>
-            <a href="#">Canggu</a>
+            <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/310534628&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
           </li>
+          <br>
           <li>
-            <a href="#">Skyline</a>
+            <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/308685613&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
           </li>
+          <br>
           <li>
-            <a href="#">Go Back Home</a>
+            <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/302498916&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
           </li>
         </ul>
+        <a href="https://soundcloud.com/fkj-2" target="_blank">
+          <button class="btn btn-warning">More Music</button>
+        </a>
       </section>
 
       <!-- IMAGE 3 -->
       <div class="image img3">
         <div class="text">
-          Book FKJ
+          Services
         </div>
       </div>
 
 
-      <section class="section section-dark">
-        <h2>Book Services</h2>
+      <section class="section section-dark" id="services">
+        <h2>Services</h2>
+        <!-- <p>
+          FKJ offers a variety of services; for more information concerning pricing and services, click the following button
+        </p> -->
+        <div class="cards">
+          <div class="container">
+
+            <div class="card">
+              <i class="fa fa-headphones" aria-hidden="true"></i>
+              <p>
+                <strong>
+                  Studio
+                </strong>
+              </p>
+              <p>Need help in the studio? FKJ is always available to help new artists compose new songs or offer other music services</p>
+            </div>
+            <div class="card">
+              <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
+              <p>
+                <strong>
+                  Concert/Festival
+                </strong>
+              </p>
+              <p>Want to come up with a new festival and want FKJ to play at it? He's got you covered</p>
+            </div>
+            <div class="card">
+              <i class="fa fa-music" aria-hidden="true"></i>
+              <p>
+                <strong>
+                  Special Occassion
+                </strong>
+              </p>
+              <p>Getting married or just throwing a party? In need of good music? Look no further!</p>
+            </div>
+            <div class="card">
+              <i class="fa fa-microphone" aria-hidden="true"></i>
+              <p>
+                <strong>
+                  Jam Session
+                </strong>
+              </p>
+              <p>FKJ offers private jamming sessions to musicians that would like to colab or experience his funky vibes behind the scenes</p>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <!-- NEEDS WHY BOOK SECTION -->
+      <!-- MOVE LOWER I THINK -->
+        <!-- <button class="btn btn-warning">Book FKJ</button> -->
+      </section>
+
+
+      <!-- IMAGE 4 -->
+      <div class="image img4">
+        <div class="text">
+          Contact
+        </div>
+      </div>
+
+
+      <section class="section section-dark" id="contact">
+        <h2>Contact FKJ</h2>
         <p>
           FKJ offers a variety of services; for more information concerning pricing and services, click the following button
         </p>
-        <button class="btn btn-primary">Book FKJ</button>
+        <a href="contact.html">
+          <button class="btn btn-warning">Book FKJ</button>
+        </a>
       </section>
 
-      <!-- VIDEO - IFRAME TEST -->
-      <div class="video">
+      <div class="embed-responsive embed-responsive-16by9">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/lqXrh8LITSs" frameborder="0" allowfullscreen></iframe>
       </div>
 
     </main>
 
 
-    <!-- NEEDS FOOTER -->
     <footer>
-      <!-- <div class="footer">
-        <p>
-          ©FKJ Music, <i class="fa fa-code" aria-hidden="true"></i>
-          with <i class="fa fa-heart" aria-hidden="true"></i>
-          by <a href="https://github.com/ipresilia" target="_blank">Ilsmarie</a>
-        </p>
-      </div> -->
+
+      <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+          <p>
+            &copy; FKJ Music, <i class="fa fa-code" aria-hidden="true"></i>
+            with <i class="fa fa-heart" aria-hidden="true"></i>
+            by <a href="https://github.com/ipresilia" target="_blank">Ilsmarie Presilia</a>
+            <a href="https://soundcloud.com/fkj-2" target="_blank">
+              <i class="fa fa-soundcloud" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/frenchkiwijuice/" target="_blank">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/frenchkiwijuice/" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/Fkjmusic" target="_blank">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </p>
+
+        </div>
+      </nav>
     </footer>
 
     <!-- scripts/vendor.js -->
@@ -126,8 +218,5 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-
-    <!-- scripts/main.js -->
-    <script src="scripts/main.js"></script>
   </body>
 </html>
